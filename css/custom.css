@@ -1,0 +1,16 @@
+
+.ui-autocomplete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    list-style: none;
+    padding:0;
+    margin:10px;overflow-y:scroll;
+    max-height:200px;
+}
+.ui-menu-item{padding:10px;border:none !important}
+@media (max-width:767px){
+    .btn-block-xs{ display:block; width: 100%;}
+    .btn-block-xs span{display:inline-block !important; margin:0px 5px;}
+}

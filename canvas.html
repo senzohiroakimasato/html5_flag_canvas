@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--core javascript-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/select2.min.js"></script>
+
+    <!--custom javascript-->
+    <script src="js/app.js"></script>
+    <script src="js/efustionsoft.js"></script>
+
+    <!--core css-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.theme.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.structure.min.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet" >
+
+    <!--custom css-->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <title>My Flag</title>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header clearfix">
+        <h3 class="text-muted text-center">Logo Here</h3>
+    </div>
+
+    <div class="jumbotron">
+        <h1>Get started</h1>
+        <p class="lead">Select your ethnicity percent in the different countries you have lived and click <strong>Create My Canvas</strong> to create and order your canvas print.</p>
+    </div>
+
+    <h1 id="fb-welcome"></h1>
+
+    <div class="row step1">
+        <div id="ethnicity1">
+            <div class="form-group col-sm-5">
+                <select name="country[]" class="form-control country" id="country1" placeholder="select a country"></select>
+            </div>
+            <div class="form-group col-sm-3">
+                <label class="sr-only" for="epercentage1">Ethnicity %</label>
+                <input style="width:100%" type="text" class="form-control btn" id="epercentage1" readonly name="epercentage">
+            </div>
+            <div class="form-group col-sm-3">
+                <div id="slider-range-min1" style="height:10px; margin-top:12px;"></div>
+            </div>
+            <div class="form-group col-sm-1">
+                <button type="button" id="b1" class="btn btn-primary btn-block-xs add-more" aria-label="Add another ethnicity" disabled="disabled">
+                    <span class="visible-xs">Add another </span><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="form-group col-sm-12 text-center">
+                <button type="button" class="btn btn-success btn-block-xs gotoStep2">Create My Canvas</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+            </div>
+        </div>
+    </div>
+
+    <div class="row step2">
+        <button type="button" class="btn btn-success btn-block-xs btnDownload"> Download </button>
+        <canvas id="nationality" width="800" height="600" style="border: cornflowerblue 1px solid"></canvas>
+        <img id="imgView" style="border: greenyellow 1px solid">
+    </div>
+
+    <footer class="footer">
+
+    </footer>
+
+  </div>
+
+    <script>
+        function msg(str){
+            alert(str);
+        }
+    </script>
+</body>
+</html>
